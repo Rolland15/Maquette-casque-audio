@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+:root {
+  --violet: #d33bfd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(#13181d, #20212e, #341b47);
+}
+
+header nav {
+  padding: 30px 5% 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav h1 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+
+.right {
+  width: 40%;
+}
+
+.right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.right ul li {
+  color: #ccc;
+  list-style: none;
+}
+
+.right ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: var(--violet);
+  padding: 5px 12px;
+  border: 1px solid var(--violet);
+  border-radius: 5px;
+}
+
+.right ul li a:hover {
+  color: inherit;
+  font-weight: 700;
+  background-color: var(--violet);
+  transition: 0.4s;
+}
+
+.presentation {
+  width: 100%;
+  margin-top: 5%;
+  padding: 30px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.presentation .presentation-produit {
+  width: 100;
+  flex-shrink: 3;
+}
+
+.presentation .presentation-produit h1 {
+  width: 80%;
+  margin: 0;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.presentation .presentation-produit p {
+  font-weight: 400;
+}
+
+.presentation .presentation-produit button {
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.presentation .presentation-img {
+  width: 70%;
+}
+
+.first .presentation-produit button {
+  background-color: var(--violet);
+  border: 1px solid var(--violet);
+  color: white;
+}
+
+.first .presentation-produit button:hover {
+  background-color: inherit;
+  transition: 0.4s;
+  color: var(--violet);
+}
+
+.first .petite-img {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.first .petite-img .small {
+  padding: 20px;
+  background-color: #33314d;
+  margin: 0 15px 15px 0;
+  border-radius: 10px;
+}
+
+.first .petite-img .small:hover {
+  filter: brightness(70%);
+  border: 1px solid white;
+  transition: 0.4s;
+}
+
+.first .petite-img .small img {
+  width: 140px;
+}
+
+.second {
+  margin: 0;
+  background: #13181d;
+}
+
+.second .new {
+  color: var(--violet);
+  margin-bottom: 40px;
+}
+
+.second .presentation-produit button {
+  background: inherit;
+  border: 1px solid var(--violet);
+  color: var(--violet);
+  margin-top: 70px;
+}
+
+.second .presentation-img img {
+  width: 62%;
+}
+
+footer {
+  margin: 0;
+  padding: 30px;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer h3 {
+  color: var(--violet);
+}
+
+@media screen and (max-width: 1010px) {
+  .right .none {
+    display: none;
+  }
+
+  .presentation .presentation-produit h1 {
+    font-size: 6vw;
+  }
+
+  .presentation .presentation-produit {
+    padding: 10%;
+  }
+
+  .presentation-img {
+    display: none;
+  }
+
+  .first .petite-img .small img {
+    width: 100px;
+  }
+
+  footer {
+    justify-content: flex-start;
+  }
+
+  footer .colonne {
+    width: 80%;
+  }
+}
